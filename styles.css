@@ -120,6 +120,21 @@ body {
     transition: all 0.2s ease;
 }
 
+/* FORMS VALIDATION */
+.forms input:focus {
+    outline: none; /* Removes default browser outline */
+    border-color: #3b82f6; /* blue */
+}
+
+.forms input[type="password"]:invalid {
+    border-color: #ef4444;
+}
+
+.forms input:valid:not(:placeholder-shown) {
+    border-color: #22c55e;
+}
+
+
 /* ----- FOOTER ----- */
 
 .footer {
@@ -133,6 +148,7 @@ body {
     padding: 1.5rem 3rem;
     border-radius: 10%;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .footer p {
