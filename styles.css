@@ -1,0 +1,74 @@
+/* GENERAL SETUP */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+/* IMAGE SECTION */
+.image-container {
+    overflow: hidden;
+    width: 35%;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures it fills the box and crops cleanly */
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 500px;          
+    left: 200px;        
+    height: 150px;
+    width: 150px;
+}
+
+.image-container .image-text {
+    position: absolute;  
+    top: 530px;          
+    left: 350px;
+    font-size: 4.5rem;  
+}
+
+
+/* MAIN SECTION */
+.main-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+
+    margin-left: 4rem;;
+}
+
+.header .text {
+    margin-top: 1rem;
+}
+
+.forms {
+    display: flex;
+    text-align: center;
+    gap: 3rem;
+}
+
+.left-forms {
+
+}
+
+.right-forms {
+
+}
+
+/* FOOTER */
+
